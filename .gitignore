@@ -1,2 +1,3 @@
 proto/number.pb.go
 crypto/file_test*
+server/server
