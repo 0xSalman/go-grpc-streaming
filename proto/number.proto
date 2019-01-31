@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package simple;
+
+service Simple {
+  rpc FindMaxNumber (stream MaxNumberRequest) returns (stream MaxNumberResponse) {
+  }
+}
+
+message MaxNumberRequest {
+  int64 number = 1;
+  bytes signature = 2;
+}
+
+message MaxNumberResponse {
+  int64 number = 1;
+}
